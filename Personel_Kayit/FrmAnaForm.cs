@@ -13,7 +13,7 @@ namespace Personel_Kayit
 {
     public partial class FrmAnaForm : Form
     {
-        public FrmAnaForm()
+        public FrmAnaForm() 
         {
             InitializeComponent();
         }
@@ -54,7 +54,7 @@ namespace Personel_Kayit
             komut.Parameters.AddWithValue("@p3", CmbSehir.Text);
             komut.Parameters.AddWithValue("@p4", MskMaas.Text);
             komut.Parameters.AddWithValue("@p5", TxtMeslek.Text);
-            komut.Parameters.AddWithValue("@p6", label8.Text);
+            komut.Parameters.AddWithValue("@p6", label8.Text);  
 
             komut.ExecuteNonQuery();
 
@@ -135,7 +135,7 @@ namespace Personel_Kayit
             komutguncelle.Parameters.AddWithValue("@a5", label8.Text);
             komutguncelle.Parameters.AddWithValue("@a6", TxtMeslek.Text);
             komutguncelle.Parameters.AddWithValue("@a7", Txtid.Text);
-            komutguncelle.ExecuteNonQuery();// inser, Update, Delete de kullanılır
+            komutguncelle.ExecuteNonQuery();// insert, Update, Delete de kullanılır
             baglanti.Close();
             MessageBox.Show("Personel Bilgi Güncellendi");
         }

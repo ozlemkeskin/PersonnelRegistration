@@ -88,7 +88,7 @@
             this.BtnGirisYap.Name = "BtnGirisYap";
             this.BtnGirisYap.Size = new System.Drawing.Size(124, 43);
             this.BtnGirisYap.TabIndex = 5;
-            this.BtnGirisYap.Text = "Giiş Yap";
+            this.BtnGirisYap.Text = "Giriş Yap";
             this.BtnGirisYap.UseVisualStyleBackColor = false;
             this.BtnGirisYap.Click += new System.EventHandler(this.BtnGirisYap_Click);
             // 
